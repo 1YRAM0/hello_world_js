@@ -1,0 +1,11 @@
+{"level":"info","message":"hola mundo ","service":"app.js"}
+{"level":"info","message":"hola mundo ","service":"app.js","timestamp":"2025-06-04 11:10:54"}
+{"level":"info","message":"hola mundo ","service":"app.js","timestamp":"2025-06-04 11:13:12"}
+{"level":"info","message":"hola mundo ","service":"app.js","timestamp":"2025-06-04 11:13:54"}
+{"at":"2025-06-04T16:13:54.513Z","level":"error","message":"error de prueba","service":"app.js","timestamp":"2025-06-04 11:13:54"}
+{"level":"info","message":"hola mundo ","service":"app.js","timestamp":"2025-06-04T16:15:09.143Z"}
+{"at":"2025-06-04T16:15:09.151Z","level":"error","message":"error de prueba","service":"app.js","timestamp":"2025-06-04T16:15:09.151Z"}
+{"level":"info","message":"hola mundo ","service":"app.js","timestamp":"2025-06-04T16:17:00.246Z"}
+{"at":"2025-06-04T16:17:00.255Z","level":"error","message":"error de prueba","service":"app.js","timestamp":"2025-06-04T16:17:00.255Z"}
+{"level":"info","message":"hola mundo ","service":"app.js","timestamp":"2025-06-04T16:31:50.073Z"}
+{"at":"2025-06-04T16:31:50.080Z","level":"error","message":"error de prueba","service":"app.js","timestamp":"2025-06-04T16:31:50.081Z"}

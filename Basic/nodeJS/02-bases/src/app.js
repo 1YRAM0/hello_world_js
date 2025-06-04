@@ -23,6 +23,8 @@ const makeparson = buildmakePerson({
 const objetPerson = {name: 'Ariel', birthdate: '2000-09-10', job: 'jr-Developer'};
 const person1 = makeparson(objetPerson);
 console.log(person1);*/
+
+/*
 const { getUUId, getAge ,httpC} = require('./plugins');
 
 const { getPokemonbyId } = require('./js-foundation/06-promise.js');
@@ -32,4 +34,9 @@ getPokemonbyId(id)
     //.catch((error) => console.error('Intentelo nuevamente'))
     .finally(() => console.log('finalizo la promesa'));
 
+*/
+const {buildLogger} = require('./plugins');
+const logger = buildLogger('app.js' );
+logger.log(  'hola mundo ' );
+logger.error('error de prueba');
 
