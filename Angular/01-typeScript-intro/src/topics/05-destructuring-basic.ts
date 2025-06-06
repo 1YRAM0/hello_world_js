@@ -30,3 +30,6 @@ console.log(song, autor);
 console.log(anotherSong, anotherAutor);
 console.log(duration);
 export{};
+
+const DBz:string[] = ['Gohan', 'Gokk', 'Vegeta', 'Bulma', 'Piccolo'];
+console .error(' personaje mumero 3',DBz[3]);
