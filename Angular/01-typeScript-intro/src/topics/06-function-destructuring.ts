@@ -1,26 +1,27 @@
-interface products {
+export interface Product {
     name: string;
     price: number;  
     stock: number;
-}
-const laptop: products = {
+};
+const laptop: Product = {
     name: 'Laptop',
     price: 1500,
     stock: 10
 }
-const mouse: products = {
+const mouse: Product = {
     name: 'Mouse',  
     price: 25.50,
     stock: 100
 }
 interface ivaCalculationOptions  {
     tax: number;
-    products: products[];}
+    products: Product[];
+}
 
-//
+
 
 //function taxtcalculation ({tax,products}:ivaCalculationOptions): [number, number] {
-function taxtcalculation (options:ivaCalculationOptions): [number, number] {
+export function taxtcalculation (options:ivaCalculationOptions): [number, number] {
     const {tax, products} = options;
     let total= 0;
     products.forEach(({price}) => {
@@ -29,7 +30,8 @@ function taxtcalculation (options:ivaCalculationOptions): [number, number] {
     return [total, total *tax];
 
 }
-const shopingCart: products[] = [laptop, mouse];   
+/*
+const shopingCart: Product[] = [laptop, mouse];   
 const  Iva =0.15;
 const [total, totalIva] = taxtcalculation({
     tax: Iva,
@@ -37,3 +39,4 @@ const [total, totalIva] = taxtcalculation({
 console.log('Total sin IVA: ', total);
 console.log('Total del IVA: ', totalIva);
 export{};
+*/
