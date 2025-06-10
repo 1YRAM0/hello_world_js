@@ -1,0 +1,32 @@
+<h1>{{ nameSignal() }}</h1>
+
+<dl>
+  <td>Nombre:</td>
+  <dd>{{ nameSignal() }}</dd>
+
+  <td>Edad:</td>
+  <dd>{{ ageSignal() }}</dd>
+
+  <td>Método:</td>
+  <dd>{{ heroDescriptionSignal() }}</dd>
+
+  <td>CAPITALIZACION:</td>
+  <!-- ! Intentar  -->
+  <dd> uper computed {{UpperCasenameSignal() }} </dd>
+
+  <dd>upper pipe {{nameSignal()|uppercase }} </dd>
+
+  <td>LowerCase:</td>
+  <!-- ! Intentar  -->
+  <dd> {{ nameSignal().toLocaleLowerCase() }} </dd>
+
+  <dd> lowercase {{ nameSignal()|lowercase }} </dd>
+</dl>
+
+<button (click)="changeHero()" class="btn btn-primary mx-2">
+  Cambiar nombre
+</button>
+
+<button (click)="changeAge()" class="btn btn-primary">Cambiar edad</button>
+
+<button (click)="resetHero()" class="btn btn-primary mx-2">Reset</button>

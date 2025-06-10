@@ -1,0 +1,7 @@
+/* Yoddu can add global styles to this file, and also import other style files */
+dd {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16;
+  font-weight: bold;
+  color: #6a3df0;
+}
