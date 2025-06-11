@@ -1,0 +1,29 @@
+<style>
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #01050a;
+    padding: 10px;
+  }
+  nav a {
+    margin-right: 10px;
+    background-color: black;
+    text-decoration: none;
+    color: rgb(116, 127, 252);
+  }
+  nav a.active {
+    color: rgba(76, 255, 73, 0.77);
+    font-weight: bold;
+  }
+</style>
+<nav>
+  <a [routerLink]="['/']" [routerLinkActive]="'active'"
+  [routerLinkActiveOptions]="{exact:true}">Contador Angular  </a>
+  <a [routerLink]="['/hero']" [routerLinkActive]="'active'"
+  [routerLinkActiveOptions]="{exact:true}"> hero </a>
+  <a [routerLink]="['/dragonball']" [routerLinkActive]="'active'"
+  [routerLinkActiveOptions]="{exact:true}"> Dragonball </a>
+  <a [routerLink]="['/dragonballSuper']" [routerLinkActive]="'active'"
+  [routerLinkActiveOptions]="{exact:true}"> Dragonball Super</a>
+</nav>
