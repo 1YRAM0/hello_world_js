@@ -24,25 +24,7 @@
       <br>
       <button (click)="addCharacter()" class="mt-2 btn btn-primary">Agregar</button>
     </div>
+    <dragonball-character-list/>
 
-    <div class="col-12 col-sm-6">
-      <ul>
-        @for (character of characters(); track character.id ;let idx=$index) {
-          @if (character.power >1000){
-            <li>
-            <span> {{idx+1}} - {{character.name}}</span>
-            <strong [class.text-danger]="character.power>9000"
-              [class.text-primary]="character.power<9000 "
-
-            >
-             -{{character.power}}</strong>
-          </li>
-          }@else {
-            <strong>Aqui no hay nadie que valga la pena ver </strong>
-          }
-        }
-      </ul>
-
-    </div>
 
 </section>

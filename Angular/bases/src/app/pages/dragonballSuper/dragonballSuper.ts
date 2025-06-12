@@ -1,5 +1,6 @@
 import { NgClass } from '@angular/common';
 import { Component, computed, signal } from '@angular/core';
+import { CharacterListComponent } from "../../components/dragonball/character-list/character-list.component";
 //import { RouterLink, RouterLinkActive } from '@angular/router';
  interface Character {
   id :number ,
@@ -9,9 +10,9 @@ import { Component, computed, signal } from '@angular/core';
 @Component
 ({
   selector: 'app-dragonballSuper',
-  imports:[
-    //NgClass
-  ],
+  imports: [
+    CharacterListComponent
+],
   templateUrl: './dragonballSuper.html',
 })
 
