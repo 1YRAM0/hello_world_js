@@ -18,7 +18,7 @@ export const routes: Routes = [
     path: 'dragonball',
     component: DragonballComponent,
   },
-   {
+  {
     path: 'dragonballSuper',
     component: DragonballSuperComponent,
   },

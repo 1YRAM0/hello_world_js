@@ -4,27 +4,15 @@
 <hr>
 <section class="row">
     <div class="col-12 col-sm-6">
-      <h3>Agregar: {{name()}}</h3>
-      <input type="text"
-      class="form-control"
-      placeholder="Nombre "
-      [value]="name()"
-      (change)="name.set(txtname.value)"
-      (input)="name.set(txtname.value)"
-      #txtname
-      >
-      <input
-      type="number"
-      class="form-control mt-2"
-      placeholder="Poder "
-      [value]="power()"
-      (input)="power.set(+txtpoder.value)"
-      #txtpoder
-      >
-      <br>
-      <button (click)="addCharacter()" class="mt-2 btn btn-primary">Agregar</button>
-    </div>
-    <dragonball-character-list/>
+      <dragonball-character-add (onNewCharacter)="DragonballServices.addCharacter($event)">
 
+      </dragonball-character-add>
+    </div>
+    <div class="col-12 col-sm-6">
+      <dragonball-character-list
+      listName="List name"
+      [characters]="DragonballServices.characters()"
+      ></dragonball-character-list>
+    </div>
 
 </section>

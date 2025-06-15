@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
+import type { Character } from '../../interfaces/character.interface';
 
 @Component({
   selector: 'dragonball-character-list',
@@ -7,6 +8,9 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CharacterListComponent {
-characters: any;
+characters =input.required<Character[]>();
+listName= input.required<string>();
+
+
 
 }
