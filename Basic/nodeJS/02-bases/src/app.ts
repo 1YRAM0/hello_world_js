@@ -3,6 +3,8 @@
 //console.log(emailtemplate);
 //require('./js-foundation/02-destructuring.js');
 
+import { buildLogger } from "./plugins/logger.plugin";
+
 //const {getUserById} = require('./js-foundation/04-arrow.js');
 /*const id = 2
 
@@ -10,9 +12,7 @@ getUserById(id, (error , user)=> {
     if (error) {throw Error(error);} 
 
     console.log({user});});
-*/
-//!refereincia a la carpeta plugins con factory
-/*
+
 
 
 const {buildmakePerson} = require('./js-foundation/05-factory.js');
@@ -35,8 +35,9 @@ getPokemonbyId(id)
     .finally(() => console.log('finalizo la promesa'));
 
 */
-const {buildLogger} = require('./plugins');
 const logger = buildLogger('app.js' );
-logger.log(  'hola mundo ' );
-logger.error('error de prueba');
+logger.log(  'hola mundo25 ' );
+logger.error('error de prueba25');
 
+export const name =("Ariel")
+console.log(name)
