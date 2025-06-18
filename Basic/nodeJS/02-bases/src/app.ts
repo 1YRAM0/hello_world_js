@@ -2,6 +2,7 @@
 //const {emailtemplate} = require('./js-foundation/01-template.js');
 //console.log(emailtemplate);
 //require('./js-foundation/02-destructuring.js');
+import { getPokemonbyId } from "./js-foundation/06-promise";
 
 import { buildLogger } from "./plugins/logger.plugin";
 
@@ -28,6 +29,7 @@ console.log(person1);*/
 const { getUUId, getAge ,httpC} = require('./plugins');
 
 const { getPokemonbyId } = require('./js-foundation/06-promise.js');
+
 const id = 4;
 getPokemonbyId(id) 
     .then((pokemon) => console.log({pokemon}))
@@ -35,9 +37,10 @@ getPokemonbyId(id)
     .finally(() => console.log('finalizo la promesa'));
 
 */
+/*
 const logger = buildLogger('app.js' );
 logger.log(  'hola mundo25 ' );
 logger.error('error de prueba25');
 
 export const name =("Ariel")
-console.log(name)
+console.log(name)*/
