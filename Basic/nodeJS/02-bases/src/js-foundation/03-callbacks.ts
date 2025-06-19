@@ -1,7 +1,11 @@
-import { name } from '../app';
 interface User{
     id:number,
     name:string, 
+}
+interface carros {  
+    placa :string,
+    modelo: string,
+    año: number,
 }
 const users :User[] = [
     {
